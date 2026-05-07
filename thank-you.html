@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | SCCAU</title>
+    <!-- Same CSS links as your main site -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="thank-you.css">
+</head>
+<body>
+
+<section class="thank-you-wrapper">
+    <div class="container">
+        <div class="thank-you-card reveal-up">
+            <!-- Visual Confirmation -->
+            <div class="success-image">
+                <img src="IMAGES/tick2.png" alt="Success">
+            </div>
+
+            <h1>Submission <span class="highlight">Received!</span></h1>
+            <p>Thank you for reaching out to the Sickle Cell Care Alliance Uganda. Your commitment helps us keep 92% of our funds in the field where they matter most.</p>
+            
+            <div class="redirect-info">
+                <p>Redirecting you back in <span id="timer">10</span> seconds...</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a href="index.html" class="btn-primary">Return Home Immediately</a>
+                <button onclick="history.back()" class="btn-secondary">Go to Previous Page</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Automatic Redirect Logic
+    let timeLeft = 10;
+    const timerElement = document.getElementById('timer');
+    const progressBar = document.getElementById('progressBar');
+
+    const countdown = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+        
+        // Update progress bar width
+        let width = (timeLeft / 10) * 100;
+        progressBar.style.width = width + "%";
+
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            window.location.href = "index.html"; // Target page
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>

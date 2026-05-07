@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sickle Cell Champions Alliance Uganda</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="IMAGES/logo.jfif" alt="SCAU Logo" class="logo">
+                <span class="brand-name">Sickle Cell Champions <span class="break"></span>Alliance Uganda</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="programs.html">What we Do</a></li>
+                    <li><a href="involve.html">Get Involved</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="donate.html" class="btn-cta">Donate</a></li>
+            </ul>
+
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--=============================================Hero section=================================================-->
+<!-- ENHANCED CONTACT HERO -->
+<section class="contact-hero">
+    <div class="container">
+        <div class="contact-hero-content reveal-up">
+            <span class="section-tag">Direct Communication</span>
+            <h1>Let’s Start a <span class="highlight-coral">Conversation</span></h1>
+            <p>
+                Our team in Lira City is dedicated to providing swift support for medical partners, 
+                volunteers, and Sickle Cell Champions. We ensure all inquiries are handled with clinical precision and care.
+            </p>
+
+            <!-- Operational Status Bar -->
+            <div class="status-grid">
+                <div class="status-item">
+                    <span class="status-label">Average Response Time</span>
+                    <span class="status-value">48 Hours</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Office Operations</span>
+                    <span class="status-value">Mon — Friday</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Inquiry Status</span>
+                    <span class="status-value">Digital Intake 24/7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--============================================Hero section ends=============================================-->
+
+    <!--==============================================Form section starts================================================-->
+<!-- MAIN CONTACT SECTION -->
+<section class="contact-main">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-up">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Send Us a <span class="highlight">Message</span></h2>
+            <p>Whether you have a medical inquiry or want to partner with our Lira team, use the form below to reach our communications office.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Left: Contact Form -->
+            <div class="contact-form-container reveal-up">
+                <form action="process_contact.php" method="POST" class="styled-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <select name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="medical">Medical/Clinical Support</option>
+                            <option value="partnership">Partnership/Donations</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right: Contact Info -->
+            <div class="contact-info-panel reveal-up" style="transition-delay: 0.1s;">
+                <div class="info-card">
+                    <!-- Location -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="IMAGES/location.webp" alt="Location Icon">
+                        </div>
+                        <div class="info-text">
+                            <h4>Headquarters</h4>
+                            <p>Lira City, Northern Uganda</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="IMAGES/gmail.webp" alt="Email Icon">
+                        </div>
+                        <div class="info-text">
+                            <h4>Electronic Mail</h4>
+                            <p>sicklecellalliance@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="IMAGES/phone.webp" alt="Phone Icon">
+                        </div>
+                        <div class="info-text">
+                            <h4>Direct Line</h4>
+                            <p>+256 784 235023</p>
+                            <span>Mon — Fri: 8:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+
+                    <!-- NGO Status Box -->
+                    <div class="ngo-status-box">
+                        <p><strong>SCCAU</strong> is a fully registered Non-Governmental Organization under the Federal Government of Uganda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--===============================================Form section end ==========================================-->
+ 
+    <!--===============================================FAQ starts=================================================-->
+<!-- FAQ SECTION -->
+<!-- FAQ SECTION -->
+
+
+<section class="get-involved-faq">
+    <div class="container">
+        <div class="section-header-centered">
+            <span class="subtitle-tag">Common Inquiries</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Answers to common questions regarding our clinical mission and community support protocols.</p>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What is the main mission of the SCCAU alliance? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>Our mission is to reduce the sickle cell burden in Northern Uganda through genotype screening, genetic counseling, and vocational empowerment for Warriors to ensure they lead healthy, self-reliant, and productive lives.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How does SCCAU utilize the funds received from donors? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>Transparency is our priority. We maintain a strict pledge where 92% of all funds go directly into field projects like testing kits and empowerment tools, while only 8% supports the essential administrative logistics.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I access sickle cell screening at the Lira headquarters? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>Yes! We provide high-precision genotype testing at our Lira City office and during school outreach. Every test includes professional counseling to help families understand their results and make informed health decisions.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is SCCAU a fully registered organization in Uganda? <span class="icon">+</span></button>
+            <div class="faq-answer">
+                <p>SCCAU is a fully registered Non-Governmental Organization under the Federal Government of Uganda. We provide official receipts for all contributions and maintain strict compliance with all national regulatory requirements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--===============================================FAQ ends=================================================-->
+ 
+    <!--===============================================Final CTA starts======================================================-->
+<!-- FINAL CTA SECTION -->
+<section class="final-cta reveal-up">
+    <div class="container">
+        <div class="cta-card">
+            <div class="cta-content">
+                <span class="cta-subtitle">The Warrior Circle</span>
+                <h2>Every Warrior Deserves a <span class="highlight-coral">Champion.</span></h2>
+                <p>
+                    Your support directly fuels our 92% fund efficiency pledge, providing life-saving diagnostics and vocational tools to families across Northern Uganda. Join us in rewriting the narrative of Sickle Cell today.
+                </p>
+                <div class="cta-buttons">
+                    <a href="donate.html" class="btn-primary">Become a Donor</a>
+                    <a href="contact.html" class="btn-secondary">Join as a Volunteer</a>
+                </div>
+            </div>
+            
+            <!-- This image represents the hope and growth of your football academy and medical outreach -->
+            <div class="cta-image">
+                <img src="IMAGES/outreach.webp" alt="Sickle Cell Warrior Empowerment">
+            </div>
+        </div>
+    </div>
+</section>
+    <!--================================================Final CTA ends======================================================-->
+<!--================================================= Footer starts=========================================== -->
+<footer class="main-footer">
+    <div class="footer-grid">
+        <!-- Column 1: Brand & Socials -->
+        <div class="footer-column footer-brand">
+            <img src="IMAGES/logo.jfif" alt="SCAU Logo" class="footer-logo">
+            <p>Empowering Northern Uganda through awareness and testing. A sickle cell champion can still <strong>live a full life</strong> if we are intentional in making their lives better.</p>
+            
+            <div class="footer-social-images">
+                <a href="#"><img src="IMAGES/whatsapp-icon.png" alt="WhatsApp"></a>
+                <a href="#"><img src="IMAGES/facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="IMAGES/xicon.webp" alt="X"></a>
+                <a href="#"><img src="IMAGES/linkedin.webp" alt="LinkedIn"></a>
+                <a href="#"><img src="IMAGES/ig-icon.webp" alt="Instagram"></a>
+
+            </div>
+        </div>
+
+        <!-- Column 2: Links & Contact -->
+        <div class="footer-column footer-info">
+            <div class="info-group">
+                <h4>Quick Links</h4>
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="programs.html">What we Do</a></li>
+                    <li><a href="involve.html">Get Involved</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="info-group" style="margin-top: 30px;">
+                <h4>Find Us</h4>
+                <p>Lira City, Northern Uganda</p>
+                <p>Email: sicklecellchampions@gmail.com</p>
+                <p>Phone: +256 784 235023</p>
+            </div>
+        </div>
+
+        <!-- Column 3: The Map -->
+        <div class="footer-column footer-map">
+    <h4>Our Headquarters</h4>
+    <div class="map-container">
+    <!-- Updated Embed Code centered towards Lira City West (Akitenino Cell area) -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.050608556637!2d32.8750000!3d2.2470000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1770967000000000%3A0x0!2sLira%20City%20West%2C%20Uganda!5e0!3m2!1sen!2sug!4v1714600000000!5m2!1sen!2sug" 
+        width="100%" 
+        height="220" 
+        style="border:0; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+</div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p class="copyright">&copy; 2026 Sickle Cell Champions Alliance Uganda. All Rights Reserved.</p>
+            <p class="developer-credit">
+                  Developed by 
+                <a href="https://www.namelevate.tech" target="_blank" class="namelevate-link"><u>Namelevate Technologies</u></a>
+            </p>
+        </div>
+    </div>
+</footer>
+<!--================================================= Footer ends=========================================== -->
+<!--===================================================Whats App Chat Button===================================================-->
+<a href="https://wa.me/256784235023" class="whatsapp-float" target="_blank">
+    <span class="wa-tooltip">Chat with us</span>
+    <img src="IMAGES/whatsapp-icon.png" alt="WhatsApp Chat">
+</a>
+<!--====================================================WhatsApp Chat Button====================================================-->
+
+
+
+<script src="js/contact.js"></script>
+</body>
+</html>
