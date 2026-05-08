@@ -108,6 +108,10 @@ body {
     background-color: var(--teal);
     transition: all 0.3s ease-in-out;
 }
+  .break::before {
+        content: "\A";
+        white-space: pre;
+    }
 
 @media (max-width: 992px) {
  /*   .brand-name {
@@ -3076,7 +3080,7 @@ body {
     position: relative;
     height: 100vh; /* Full screen height */
     min-height: 700px;
-    background-image: url('IMAGES/outreach.webp');
+    background-image: url('IMAGES/sccau1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Creates a high-end parallax effect */
