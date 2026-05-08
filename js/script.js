@@ -105,7 +105,7 @@ class Particle {
     draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, 1.5, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 127, 80, ${this.alpha})`; // Constant Coral
+        ctx.fillStyle = `rgba(255, 127, 80, 0.8)`; // Constant Coral
         ctx.fill();
     }
 }
@@ -118,7 +118,7 @@ function animate() {
         
         ctx.beginPath();
         // Constant Coral lines
-        ctx.strokeStyle = `rgba(255, 127, 80, 0.15)`; 
+        ctx.strokeStyle = `rgba(104, 169, 210, 0.22)`; 
         ctx.moveTo(canvas.width * hqX, canvas.height * hqY);
         ctx.lineTo(p.x, p.y);
         ctx.stroke();
@@ -143,6 +143,39 @@ document.querySelectorAll('.reveal-left, .reveal-right').forEach(el => {
     expansionObserver.observe(el);
 });
 
+
+// testimonials video play button
+const video = document.getElementById('spotlightVideo');
+const playBtn = document.getElementById('playPauseBtn');
+const muteBtn = document.getElementById('muteBtn');
+const progressBar = document.getElementById('progressBar');
+
+playBtn.addEventListener('click', () => {
+    if (video.paused) {
+        video.play();
+        playBtn.innerHTML = '||'; // Change to Pause icon
+        playBtn.style.opacity = '0.3'; // Fade out slightly when playing
+    } else {
+        video.pause();
+        playBtn.innerHTML = '▶';
+        playBtn.style.opacity = '1';
+    }
+});
+
+muteBtn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteBtn.innerHTML = video.muted ? '🔇' : '🔊';
+});
+
+video.addEventListener('timeupdate', () => {
+    const progress = (video.currentTime / video.duration) * 100;
+    progressBar.value = progress;
+});
+
+progressBar.addEventListener('input', () => {
+    const time = (progressBar.value / 100) * video.duration;
+    video.currentTime = time;
+});
 // testimonials section animation
 const slider = document.getElementById('testiSlider');
 let autoScroll = setInterval(() => moveSlider(1), 8000);
