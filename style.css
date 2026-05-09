@@ -3934,6 +3934,7 @@ body {
     padding: 20px;
     border-bottom: 1px solid #eee;
     transition: 0.3s;
+    overflow: hidden;
 }
 
 .tier-card:hover { background: #fdf8f6; }
