@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const loader = document.getElementById('loader-wrapper');
     
     let width = 0;
-    const duration = 4000; // 4 seconds
-    const intervalTime = 40; // update every 40ms
+    const duration = 2500; // 4 seconds
+    const intervalTime = 25; // update every 40ms
     const step = 100 / (duration / intervalTime);
 
     const timer = setInterval(() => {
