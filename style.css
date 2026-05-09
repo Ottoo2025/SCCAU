@@ -3879,6 +3879,111 @@ body {
 }
 
 
+/* --- FINANCIAL TRANSPARENCY --- */
+.financial-transparency {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.transparency-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* Chart Styles */
+.chart-container {
+    padding: 40px;
+    background: #f9fdfd;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#impactChart {
+    max-width: 350px;
+    margin: 0 auto 30px;
+}
+
+.chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot { width: 12px; height: 12px; border-radius: 3px; }
+.clinical { background: #008080; } /* Teal */
+.outreach { background: #e65c40; } /* Coral */
+.vocational { background: #ffcc00; } /* Gold/Yellow */
+.admin { background: #333333; } /* Dark Grey */
+
+/* Impact Tiers */
+.impact-tiers h3 { margin-bottom: 25px; color: var(--dark-bg); }
+
+.tier-card {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.tier-card:hover { background: #fdf8f6; }
+
+.tier-amount {
+    color: var(--coral);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Dual CTA Box */
+.cta-dual-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.cta-card {
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cta-card.donate { background: var(--dark-bg); color: white; }
+.cta-card.partner { background: var(--teal); color: white; }
+
+.cta-icon { font-size: 2.5rem; margin-bottom: 20px; opacity: 0.8; }
+.cta-card h3 { font-size: 1.8rem; margin-bottom: 15px; }
+.cta-card p { margin-bottom: 30px; opacity: 0.9; }
+
+.btn-cta {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.donate .btn-cta { background: var(--coral); color: white; }
+.partner .btn-cta.outline { border: 2px solid white; color: white; }
+.partner .btn-cta.outline:hover { background: white; color: var(--teal); }
+
+@media (max-width: 992px) {
+    .transparency-grid, .cta-dual-box { grid-template-columns: 1fr; }
+}
+
 
 /*   Get Involved Section   */
 /* --- GET INVOLVED HERO --- */

@@ -49,3 +49,34 @@ document.querySelectorAll('.flip-card-wrapper').forEach(card => {
     });
 });
 
+// Transparency section - Responsive Chart.js initialization
+const chartElement = document.getElementById('impactChart');
+
+if (chartElement) {
+    const ctx = chartElement.getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Clinical', 'Outreach', 'Vocational', 'Admin'],
+            datasets: [{
+                data: [40, 25, 20, 15],
+                backgroundColor: ['#008080', '#e65c40', '#ffcc00', '#333333'],
+                borderWidth: 0,
+                hoverOffset: 10
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    callbacks: {
+                        label: (context) => ` ${context.label}: ${context.raw}%`
+                    }
+                }
+            },
+            cutout: '70%'
+        }
+    });
+}
