@@ -49,24 +49,3 @@ document.querySelectorAll('.flip-card-wrapper').forEach(card => {
     });
 });
 
-
-// Transparency section - Chart.js initialization
-const ctx = document.getElementById('impactChart').getContext('2d');
-const impactChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: ['Clinical', 'Outreach', 'Vocational', 'Admin'],
-        datasets: [{
-            data: [45, 30, 17, 8],
-            backgroundColor: ['#008080', '#e65c40', '#ffcc00', '#333333'],
-            borderWidth: 0,
-            hoverOffset: 10
-        }]
-    },
-    options: {
-        plugins: {
-            legend: { display: false }
-        },
-        cutout: '70%'
-    }
-});
