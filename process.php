@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = strip_tags(trim($_POST["message"]));
 
     // 3. Email Configuration
-    $to = "sicklecellalliance@gmail.com";
+    $to = "info@sccau.org";
     $subject = "New $type Application: $name";
     
     $email_content = "Name: $name\n";
